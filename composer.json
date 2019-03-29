@@ -1,0 +1,34 @@
+{
+    "name": "milestone/milestone",
+    "description": "description...",
+    "type": "library",
+    "keywords": ["laravel-admin", "extension"],
+    "homepage": "https://github.com/milestone/milestone",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "your name",
+            "email": "your email"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "encore/laravel-admin": "~1.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Encore\\Milestone\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Encore\\Milestone\\MilestoneServiceProvider"
+            ]
+
+        }
+    }
+}
